@@ -1,4 +1,4 @@
-define(['jquery'],function($){
+define(['jquery','cookie'],function($){
     //实现登录功能
     $('#login').click(function(){
         var formdata=$('#loginForm').serialize();
@@ -9,6 +9,9 @@ define(['jquery'],function($){
             dataType:'json',
             success:function(data){
                 if(data.code==200){
+                    //设置cookie值,cookie只能存储字符串
+                    $.cookie('loginInfo',JSON.stringify(data.result),{path:'/'});
+                    //登录成功跳转到主页面
                     location.href='/main/index';
                 }
                 else{
@@ -20,4 +23,5 @@ define(['jquery'],function($){
         });
         return false;//阻止浏览器默认行为
     });
+
 });

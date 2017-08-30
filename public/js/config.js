@@ -1,9 +1,10 @@
 
-    require.config({
+    require.config({//配置路径
        baseUrl:'/public/assets',//基准路径
-        paths:{
+        paths:{//定义依赖文件的别名
           jquery:'jquery/jquery',
-          common:'../js/common',
-          login:'../js/login'
+          cookie:'jquery-cookie/jquery.cookie',
+          common:'../js/common',//退出
+          login:'../js/login'//登录
         }
     });
