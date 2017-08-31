@@ -1,4 +1,7 @@
-define(['jquery','template','bootstrap'],function($,template){
+define(['jquery','template','util','bootstrap'],function($,template,util){
+    //侧边栏高亮显示
+    //$('.navs a[href="'+location.pathname+'"]').addClass('active');
+    util.setMenu(location.pathname);
 //调用后台接口获取数据列表
     $.ajax({
         type:'get',

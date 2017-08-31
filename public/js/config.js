@@ -8,7 +8,9 @@
            bootstrap:'bootstrap/js/bootstrap.min',
           common:'../js/common',//退出
           login:'../js/login',//登录
-          teacherlist:'../js/teacher-list'//教师列表功能
+          index:'../js/index',
+          teacherlist:'../js/teacher-list',//教师列表功能
+            util:'../js/util'
         },
         shim:{
             bootstrap:{
