@@ -26,6 +26,35 @@ define(['jquery','template','bootstrap'],function($,template){
                         $('#teacherModal').modal();
                     }
                 })
+
+            })
+            //控制启用和注销
+            $('.eord').click(function(){
+                var td = $(this).closest('td');//获取最近的父元素
+                var tcId = td.attr('data-tcId');//获取当前记录的Id
+                var tcStatus = td.attr('data-status');
+                var that=this;
+                //调用接口获取数据
+                $.ajax({
+                    type:'post',
+                    url:'/api/teacher/handle',
+                    data:{tc_id:tcId,tc_status:tcStatus},
+                    dataType:'json',
+                    success:function(data){
+                        if(data.code == 200){
+                            //修改当前状态
+                            td.attr('data-status','data.result.tc_status');
+                            //修改文字信息
+                            if(data.result.tc_status == 0){
+                                $(that).html('注销');
+                            }
+                            else{
+                                $(that).html('启用');
+                            }
+
+                        }
+                    }
+                })
             })
         }
     });
