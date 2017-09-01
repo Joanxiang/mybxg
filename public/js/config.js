@@ -5,7 +5,9 @@
           jquery:'jquery/jquery',
           cookie:'jquery-cookie/jquery.cookie',
           template:'artTemplate/template-web',//模板引擎
-           bootstrap:'bootstrap/js/bootstrap.min',
+          bootstrap:'bootstrap/js/bootstrap.min',
+          datepicker:'bootstrap-datepicker/js/bootstrap-datepicker',
+          language:'bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min',
           common:'../js/common',//退出
           login:'../js/login',//登录
           index:'../js/index',
@@ -16,6 +18,9 @@
         shim:{
             bootstrap:{
                deps:['jquery']
+            },
+            language:{
+                deps:['jquery','datepicker']
             }
         }
     });
