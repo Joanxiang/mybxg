@@ -10,6 +10,7 @@
           login:'../js/login',//登录
           index:'../js/index',
           teacherlist:'../js/teacher-list',//教师列表功能
+          teacheradd:'../js/teacher-add',//教师列表功
             util:'../js/util'
         },
         shim:{
