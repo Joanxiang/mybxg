@@ -8,6 +8,7 @@
           bootstrap:'bootstrap/js/bootstrap.min',
           datepicker:'bootstrap-datepicker/js/bootstrap-datepicker',
           language:'bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min',
+          form:'jquery-form/jquery.form',
           validate:'validate/jquery-validate.min',
           common:'../js/common',//退出
           login:'../js/login',//登录

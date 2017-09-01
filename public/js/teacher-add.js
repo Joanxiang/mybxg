@@ -1,4 +1,4 @@
-define(['jquery', 'template', 'util','datepicker','language','validate'], function ($, template, util) {
+define(['jquery', 'template', 'util','datepicker','language','validate','form'], function ($, template, util) {
     //设置菜单选中
     util.setMenu('/teacher/list');
     //获取编辑的讲师id
@@ -35,7 +35,17 @@ define(['jquery', 'template', 'util','datepicker','language','validate'], functi
         $('#teacherForm').validate({
             sendForm:false,
             valid:function(){
-                console.log('ok');
+               //提交表单
+                $(this).ajaxSubmit({
+                    type:'post',
+                    url:url,
+                    dataType:'json',
+                    success:function(data){
+                        if(data.code == 200){
+                            location.href = '/teacher/list';
+                        }
+                    }
+                });
             },
             description:{
                 tc_name:{
