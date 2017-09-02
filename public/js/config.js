@@ -15,7 +15,8 @@
           index:'../js/index',
           teacherlist:'../js/teacher-list',//教师列表功能
           teacheradd:'../js/teacher-add',//教师列表功
-            util:'../js/util'
+          util:'../js/util',
+          settings:'../js/settings',
         },
         shim:{
             bootstrap:{
