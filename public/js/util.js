@@ -2,7 +2,7 @@ define(['jquery'],function($){
     //工具函数
     return {
         setMenu : function(path){//获取url中的地址
-            $('.navs a[href="'+path+'"]').addClass('active');
+            $('.navs a[href="'+path+'"]').addClass('active').closest('ul').show();
         },
         qs : function(key){//获取url中问号后面的参数
             var param = location.search.substring(1);//获取地址栏中所有的参数，节去掉问号

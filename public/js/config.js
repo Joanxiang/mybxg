@@ -21,7 +21,8 @@
           teacheradd:'../js/teacher-add',//教师列表功
           util:'../js/util',
           settings:'../js/settings',
-          state:'../js/state'
+          state:'../js/state',
+          courselist:'../js/course-list'
         },
         shim:{
             bootstrap:{
