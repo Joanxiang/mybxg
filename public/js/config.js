@@ -11,6 +11,7 @@
           form:'jquery-form/jquery.form',
           validate:'validate/jquery-validate.min',
           uploadify:'uploadify/jquery.uploadify.min',
+          region:'jquery-region/jquery.region',
           common:'../js/common',//退出
           login:'../js/login',//登录
           index:'../js/index',
