@@ -13,6 +13,7 @@
           uploadify:'uploadify/jquery.uploadify.min',
           region:'jquery-region/jquery.region',
           ckeditor:'ckeditor/ckeditor',
+          nprogress:'nprogress/nprogress',
           common:'../js/common',//退出
           login:'../js/login',//登录
           index:'../js/index',
@@ -20,6 +21,7 @@
           teacheradd:'../js/teacher-add',//教师列表功
           util:'../js/util',
           settings:'../js/settings',
+          state:'../js/state'
         },
         shim:{
             bootstrap:{

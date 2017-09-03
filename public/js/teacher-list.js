@@ -1,4 +1,4 @@
-define(['jquery','template','util','bootstrap'],function($,template,util){
+define(['jquery','template','util','bootstrap','state'],function($,template,util){
 
     //侧边栏高亮显示
     //$('.navs a[href="'+location.pathname+'"]').addClass('active');
