@@ -17,10 +17,11 @@ define(['jquery','template','util','ckeditor','uploadify','datepicker','language
                 height:120,
                 buttonText:'',
                 swf:'/public/assets/uploadify/uploadify.swf',
-                uploadify:'/api/uploadify/avatar',
+                uploader:'/api/uploader/avatar',
                 fileObjName:'tc_avatar',
-                onUploadifySuccess:function(f,data){
+                onUploadSuccess : function(f,data){
                     var data = JSON.parse(data);
+                    console.log(data);
                     //重置头像的地址图片
                     $('.preview img').attr('src',data.result.path);
                 }
