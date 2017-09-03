@@ -12,6 +12,7 @@
           validate:'validate/jquery-validate.min',
           uploadify:'uploadify/jquery.uploadify.min',
           region:'jquery-region/jquery.region',
+          ckeditor:'ckeditor/ckeditor',
           common:'../js/common',//退出
           login:'../js/login',//登录
           index:'../js/index',
@@ -32,6 +33,9 @@
             },
             uploadify:{
                 deps:['jquery']
+            },
+            ckeditor : {
+                exports:'CKEDITOR'
             }
         }
     });
